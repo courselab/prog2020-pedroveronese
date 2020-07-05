@@ -39,6 +39,22 @@ int greatest (int a, int b, int c)
   {
     count = count + c;
   }
+  if (( c = b ) && ( c = a ) )
+  {
+    count = count + c;
+  }
+  if (( c = b ) && ( b > a ) )
+  {
+    count = count + c;
+  }
+  if ( ( c = a ) && c > b) 
+  {
+    count = count + c;
+  }
+  if ( ( b = a ) && a > c) 
+  {
+    count = count + a;
+  }
   return count ;
 }
 
