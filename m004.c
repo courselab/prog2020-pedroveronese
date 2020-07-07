@@ -28,18 +28,29 @@
    into 110); an empty string means zero. */
 
 int decimal (char *b)
-{
-  int restante;
-  int i;
-  int bin[i];
+{ 
+  int count = 0;
 
-  while (*b > 0)
-  bin[i] = *b%2;
-  i++;
-  *b = *b / 2;
+  int a = 1;
 
+  int i, medida;
+
+  medida = strlen (b);
+
+  for ( i = medida - 1 ; i >= 0 ; i--)
+
+  {
+    if (b[i] == '1')
+    {
+       count = count + 1*a ;
+    }
+    
+    a = a*2;
+ 
+  }
   
-  return bin[i];
+  return count ; 
+  return 0;
 }
 
 #define USAGE "m004 <string>\n"
