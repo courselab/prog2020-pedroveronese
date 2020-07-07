@@ -28,7 +28,30 @@
 
 int wordcount (char *filename)
 {
-  return 0;
+   FILE *fp;
+    int n;
+    int count = 0;
+    int palavra;
+    fp = fopen (filename, "r");
+    
+     while ((n = fgetc(fp)) != EOF) 
+     {
+         if ((palavra == 0 && n == 32) || (palavra == 0 && n == 10))
+         {
+            count++;
+            palavra = 1;
+         }
+
+         else
+         {
+           if ((palavra == 1 && n != 32) || (palavra == 1 && n != 10))
+           {
+             palavra = 0;
+           }
+         }
+     }
+  return count;
+  fclose(fp);
 }
 
 /* Do not edit function main. */
