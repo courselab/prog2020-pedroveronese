@@ -30,7 +30,86 @@ enum {sun, mon, tue, wed, thu, fri, sat};
 
 int day_of_week (int day, int month)
 {
-  return sun;
+  int total;
+  if (month == 1)
+  {
+    total == day;
+  }
+  if (month == 2)
+  {
+    total = day + 31;
+  }
+  if ( month == 3)
+  {
+    total = day + 60;
+  }
+  if ( month == 4)
+  {
+    total = day +91;
+  }
+  if (month == 5)
+  {
+    total = day + 121;
+  }
+  if (month == 6)
+  {
+    total = day + 152;
+  }
+  if (month = 7)
+  {
+    total = day + 182;
+  }
+  if (month = 8)
+  {
+    total = day + 213;
+  }
+  if (month = 9)
+  {
+    total = day + 244;
+  }
+  if (month = 10)
+  {
+    total = day + 274;
+  }
+  if ( month = 11)
+  {
+    total = day +305;
+  }
+  if (month = 12)
+  {
+    total = day + 335;
+  }
+int t;
+t = total;
+
+  if (t%7 == 0)
+  {
+    return 3;
+  }
+  if (t%7 == 1)
+  {
+    return 4;
+  }
+  if (t%7 == 2)
+  {
+   return 5;
+  }
+  if (t%7 == 3)
+  {
+    return 6;
+  }
+  if (t%7 == 4)
+  {
+    return 0;
+  }
+  if (t%7 == 5)
+  {
+    return 1;
+  }
+  if (t%7 == 6)
+  {
+    return 2;
+  }
 }
 
 /* Do not edit function main. */

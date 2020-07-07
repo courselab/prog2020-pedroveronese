@@ -29,8 +29,17 @@
 
 int decimal (char *b)
 {
+  int restante;
+  int i;
+  int bin[i];
+
+  while (*b > 0)
+  bin[i] = *b%2;
+  i++;
+  *b = *b / 2;
+
   
-  return 0;
+  return bin[i];
 }
 
 #define USAGE "m004 <string>\n"

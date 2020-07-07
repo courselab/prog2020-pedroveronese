@@ -27,6 +27,7 @@
 
 void sort (int *a, int *b, int *c)
 {
+  if (*a > *b && *a > *c && *b > *c )
 }
 
 /* Do not edit this function. */
