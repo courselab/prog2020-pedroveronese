@@ -84,31 +84,31 @@ t = total;
 
   if (t%7 == 0)
   {
-    return 3;
+     return 2;
   }
   if (t%7 == 1)
   {
-    return 4;
+     return 3;
   }
   if (t%7 == 2)
   {
-   return 5;
+    return 4;
   }
   if (t%7 == 3)
   {
-    return 6;
+    return 5;
   }
   if (t%7 == 4)
   {
-    return 0;
+    return 6;
   }
   if (t%7 == 5)
   {
-    return 1;
+    return 0;
   }
   if (t%7 == 6)
   {
-    return 2;
+    return 1;
   }
 }
 
