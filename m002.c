@@ -29,18 +29,18 @@ void sort (int *a, int *b, int *c)
 {
   int i;
 
-  if((*a<=*b) && (*a<=*c))
+  if((*a <= *b ) && ( *a <= *c ))
   {
-    if(*c<=*b)
+    if(*c <= *b)
     {
       i = *b;
       *b = *c;
       *c = i;
     }  
   }
-  if((*b<=*a) && (*b<=*c))
+  if((*b <= *a ) && (*b <= *c))
   {
-    if(*a<=*c)
+    if( *a <= *c )
     {
       i = *a;
       *a = *b;
@@ -56,9 +56,9 @@ void sort (int *a, int *b, int *c)
       *b = i;
     }  
   }
-  if((*c<=*a) && (*c<=*b))
+  if((*c <= *a) && ( *c <= *b))
   {
-    if(*a<=*b)
+    if( *a <= *b )
     {
       i = *a;
       *a = *c;

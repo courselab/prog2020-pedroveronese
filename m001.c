@@ -24,40 +24,32 @@
 
 int greatest (int a, int b, int c)
 {
-  int count;
-  count = 0;
-
-   if (a > b && a > c)
+ int count;
+ count = 0;
+  if (a >= b) 
   {
-    count = count + a;
+    if (a >= c)
+    {
+    count = a;
+    }
+    else
+    {
+    count = c;
+    }
   }
-   if (b > c && b > a)
+  else
   {
-    count = count + b;
+    if (b >= c)
+    {
+    count = b;
+    }
+    else
+    {
+    count = c;
+    }
   }
-  if(c > b && c > a)
-  {
-    count = count + c;
-  }
-  if (( c = b ) && ( c = a ) )
-  {
-    count = count + c;
-  }
-  if (( c = b ) && ( b > a ) )
-  {
-    count = count + c;
-  }
-  if ( ( c = a ) && c > b) 
-  {
-    count = count + c;
-  }
-  if ( ( b = a ) && a > c) 
-  {
-    count = count + a;
-  }
-  return count ;
+  return count;
 }
-
 /* Do not edit this function. */
 
 int main (int argc, char **argv)

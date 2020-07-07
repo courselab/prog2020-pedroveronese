@@ -36,7 +36,7 @@ void lastname (char *s)
   strcpy(vecAux,s);
   tamVec=strlen(vecAux)-1;
   
-  for(i=tamVec;vecAux[i]!=32;i--)
+  for(i=tamVec; vecAux[i] != 32; i--)
   {
   } 
   posUltEsp=i+1;
