@@ -30,86 +30,54 @@ enum {sun, mon, tue, wed, thu, fri, sat};
 
 int day_of_week (int day, int month)
 {
-  int total;
-  if (month == 1)
-  {
-    total == day;
-  }
-  if (month == 2)
-  {
-    total = day + 31;
-  }
-  if ( month == 3)
-  {
-    total = day + 60;
-  }
-  if ( month == 4)
-  {
-    total = day +91;
-  }
-  if (month == 5)
-  {
-    total = day + 121;
-  }
-  if (month == 6)
-  {
-    total = day + 152;
-  }
-  if (month = 7)
-  {
-    total = day + 182;
-  }
-  if (month = 8)
-  {
-    total = day + 213;
-  }
-  if (month = 9)
-  {
-    total = day + 244;
-  }
-  if (month = 10)
-  {
-    total = day + 274;
-  }
-  if ( month = 11)
-  {
-    total = day +305;
-  }
-  if (month = 12)
-  {
-    total = day + 335;
-  }
-int t;
-t = total;
+  int a;
+  int i;
+ switch (month)
+ {
+   case 1: a = day;
+   break;
+   case 2: a = day + 31;
+   break;
+   case 3: a = day + 60;
+   break;
+   case 4: a = day + 91;
+   break;
+   case 5: a = day + 121;
+   break;
+   case 6: a = day + 152;
+   break;
+   case 7: a = day + 182;
+   break;
+   case 8: a = day + 213;
+   break;
+   case 9: a = day + 244;
+   break;
+   case 10: a = day + 274;
+   break;
+   case 11: a = day + 305;
+   break;
+   case 12: a = day + 335;
+    break;
+ }
 
-  if (t%7 == 0)
-  {
-     return 2;
-  }
-  if (t%7 == 1)
-  {
-     return 3;
-  }
-  if (t%7 == 2)
-  {
-    return 4;
-  }
-  if (t%7 == 3)
-  {
-    return 5;
-  }
-  if (t%7 == 4)
-  {
-    return 6;
-  }
-  if (t%7 == 5)
-  {
-    return 0;
-  }
-  if (t%7 == 6)
-  {
-    return 1;
-  }
+  switch (a%7)
+{
+    case 0: i=2;
+    break;
+    case 1: i=3;
+    break;
+    case 2: i=4;
+    break;
+    case 3: i=5;
+    break;
+    case 4: i=6;
+    break;
+    case 5: i=0;
+    break;
+    case 6: i=1;
+    break;
+} 
+return i;
 }
 
 /* Do not edit function main. */

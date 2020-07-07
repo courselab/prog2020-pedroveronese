@@ -40,9 +40,7 @@ if (n==2)
   return (1);
 }
 else
-{
   return (0);
-}
 }
 #define USAGE "m003 <num>\n"
 
