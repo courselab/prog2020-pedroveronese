@@ -24,9 +24,32 @@
 
 int greatest (int a, int b, int c)
 {
-  return a;
+ int count;
+ count = 0;
+  if (a >= b) 
+  {
+    if (a >= c)
+    {
+    count = a;
+    }
+    else
+    {
+    count = c;
+    }
+  }
+  else
+  {
+    if (b >= c)
+    {
+    count = b;
+    }
+    else
+    {
+    count = c;
+    }
+  }
+  return count;
 }
-
 /* Do not edit this function. */
 
 int main (int argc, char **argv)

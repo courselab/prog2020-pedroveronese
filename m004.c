@@ -28,8 +28,28 @@
    into 110); an empty string means zero. */
 
 int decimal (char *b)
-{
+{ 
+  int count = 0;
+
+  int a = 1;
+
+  int i, medida;
+
+  medida = strlen (b);
+
+  for ( i = medida - 1 ; i >= 0 ; i--)
+
+  {
+    if (b[i] == '1')
+    {
+       count = count + 1*a ;
+    }
+    
+    a = a*2;
+ 
+  }
   
+  return count ; 
   return 0;
 }
 

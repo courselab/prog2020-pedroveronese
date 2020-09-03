@@ -30,7 +30,54 @@ enum {sun, mon, tue, wed, thu, fri, sat};
 
 int day_of_week (int day, int month)
 {
-  return sun;
+  int a;
+  int i;
+ switch (month)
+ {
+   case 1: a = day;
+   break;
+   case 2: a = day + 31;
+   break;
+   case 3: a = day + 60;
+   break;
+   case 4: a = day + 91;
+   break;
+   case 5: a = day + 121;
+   break;
+   case 6: a = day + 152;
+   break;
+   case 7: a = day + 182;
+   break;
+   case 8: a = day + 213;
+   break;
+   case 9: a = day + 244;
+   break;
+   case 10: a = day + 274;
+   break;
+   case 11: a = day + 305;
+   break;
+   case 12: a = day + 335;
+    break;
+ }
+
+  switch (a%7)
+{
+    case 0: i=2;
+    break;
+    case 1: i=3;
+    break;
+    case 2: i=4;
+    break;
+    case 3: i=5;
+    break;
+    case 4: i=6;
+    break;
+    case 5: i=0;
+    break;
+    case 6: i=1;
+    break;
+} 
+return i;
 }
 
 /* Do not edit function main. */
